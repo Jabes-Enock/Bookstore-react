@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 /* Style */
 import './bookScroll.css'
  
-/* Component */
+/* atoms */
 import SelectPageBook from "../atoms/SelectPageBook";
 
 const BookTemplateScroll = ({handleFunction}) => {
@@ -19,6 +19,7 @@ const BookTemplateScroll = ({handleFunction}) => {
     useEffect(() => {
         const getPages = () => setPages(bookData[0].pages)
         getPages()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     } , [pages])
 
    

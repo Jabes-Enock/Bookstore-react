@@ -4,7 +4,6 @@ export const  LivroContext = createContext()
 
 
 const LivroContextProvider = ({children}) => {
-
     const books = [
         {
             id: 1,
@@ -660,8 +659,8 @@ const LivroContextProvider = ({children}) => {
     ] 
 
     return(
-        <LivroContext.Provider value = {{books} }>
-        {children}
+        <LivroContext.Provider value = { { books } }>
+         { children }
         </LivroContext.Provider> 
     )
    

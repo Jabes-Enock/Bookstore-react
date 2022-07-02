@@ -1,11 +1,10 @@
-
+/* template */
+import AboutTemplate from "../components/template/AboutTemplate"
 
 const About = () => {
-  return (
-    <div>
-      <h1>Hi</h1>
-    </div>
-  )
+    return (
+      <AboutTemplate />
+    )
 }
 
 export default About

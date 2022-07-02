@@ -10,7 +10,7 @@ const Navigation = () => {
             <img src = { logo } alt="Ibook logo" />
         </NavLink>
         <NavLink to = '/' 
-        className={({isActive}) => ( isActive ? 'navigation-item link-active' : 'navigation-item') } >Home</NavLink>
+        className = {({isActive}) => ( isActive ? 'navigation-item link-active' : 'navigation-item') } >Home</NavLink>
         <NavLink  to = '/about' 
         className={({isActive}) => ( isActive ? 'navigation-item link-active' : 'navigation-item') } >Sobre</NavLink>
     </header>

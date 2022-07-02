@@ -1,5 +1,5 @@
+/* template */
 import BookInfo from "../components/template/InfoBookTemplate"
-
 
 const InfoBook = () => {
   return (

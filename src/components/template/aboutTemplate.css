@@ -1,0 +1,45 @@
+.about-template {
+    padding: 1rem;
+}
+
+.about-template-h2 {
+    font-size: 66px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 4rem;
+}
+
+.about-template-grid {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+}
+
+.about-template-description {
+    text-align: left;
+    margin-right: 3rem;
+    line-height: 140%;
+    font-family: serif;
+}
+
+
+@media only screen and (max-width: 700px) {
+   
+    .about-template-h2 {
+        font-size: xx-large;
+        margin: 6rem 0 3rem;
+    }
+
+    .about-template-description {
+        text-align: left;
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+    }
+    .about-template-img img {
+        max-width: 100%;
+    }
+
+}

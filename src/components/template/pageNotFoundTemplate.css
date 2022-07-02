@@ -1,0 +1,26 @@
+.page-not-found {
+    display: grid;
+    place-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.page-not-found-h2 {
+    font-size: x-large;
+    font-family: serif;
+    font-weight: lighter;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .page-not-found {
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+    }
+
+}

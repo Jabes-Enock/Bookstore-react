@@ -1,27 +1,27 @@
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { LivroContext } from '../../contexts/livroContext'
 
+/* Hook */
+import useLivroContext from '../../hooks/useLivroContext'
 
+/* Atoms */
 import CoverBook from '../atoms/CoverBook'
+
+/* Style */
 import './infoBookTemplate.css'
 
 const InfoBookTemplate = () => {
   const [book, setBook] = useState([])
-
-  const { books } = useContext(LivroContext)
+  const { books } = useLivroContext()
   const { params } = useParams()
 
- 
-  
-      
   useEffect(() => {
      const getBook = () => {
         const bookData = books.filter( item => item.id === Number(params)) 
         setBook(bookData)
       }
-    
     getBook()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   } , [])
 
 

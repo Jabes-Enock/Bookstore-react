@@ -4,13 +4,14 @@ import { useParams } from 'react-router-dom'
 /* Hook */
 import useLivroContext from "../../hooks/useLivroContext";
 
-/* Style */
-import './bookTemplate.css'
-
 /* Organism */
 import BookPage from '../organism/BookPage'
 import BookScroll from '../organism/BookScroll'
 import BookArrows from '../organism/BookArrows'
+
+/* Style */
+import './bookTemplate.css'
+
 
 const BookTemplate = () => {
 
@@ -24,12 +25,13 @@ const BookTemplate = () => {
     useEffect(() => {
         const getBook = () => setBook(bookData)
         getBook()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     } , [])
 
     useEffect(() => {
         const getPages = () => setPages(bookData[0].pages)
         getPages()
-    } , [pages])
+    } , [pages, bookData])
 
 
     const changeSlide = (pageNumber) => {

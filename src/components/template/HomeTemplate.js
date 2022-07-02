@@ -1,38 +1,15 @@
-import { useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { LivroContext } from '../../contexts/livroContext'
+/* Organism */
+import BookList from '../organism/BookList'
 
-/* componentes */
-import CoverBook from '../atoms/CoverBook'
-
-import AuthorName from '../atoms/Author'
-import Title from '../atoms/Title'
-/* css */
-import './home.css'
+/* style */
+import './homeTemplate.css'
 
 const HomeTemplate = () => {
-
-  const { books } = useContext(LivroContext)
-
   return (
     <div >
-      <p className='home-h1'>Bem-vindo ao <b>iBook</b></p>
-      <div className='home-title'>Lançamentos</div>
-      <div className='home-list'>
-        {
-          books.map( book => (
-            <Link className='home-list-item' key={book.id} to={`/detail/${book.id}`}>
-              <CoverBook item={book.cover}/>
-              <Title item={book.title}/>
-              <AuthorName item={book.author} />
-            </Link>
-          
-          )) 
-        
-        }
-      </div>
-      
-      
+      <p className='home-template-h1'>Bem-vindo ao <b>iBook</b></p>
+      <div className='home-template-title'>Lançamentos</div>
+      <BookList />
     </div>
   )
 }

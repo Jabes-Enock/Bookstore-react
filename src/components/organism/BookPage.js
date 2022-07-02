@@ -19,7 +19,7 @@ const BookPage = () => {
     useEffect(() => {
         const getPages = () => setPages(bookData[0].pages)
         getPages()
-    } , [pages])
+    } , [pages, bookData])
 
     return (
         <div className='book-page'>

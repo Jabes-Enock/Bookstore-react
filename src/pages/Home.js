@@ -1,3 +1,4 @@
+/* template */
 import HomeTemplate from '../components/template/HomeTemplate'
 
 const Home = () => {
