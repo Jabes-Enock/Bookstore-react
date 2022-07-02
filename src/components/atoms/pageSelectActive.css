@@ -1,0 +1,13 @@
+.page-select-active {
+    padding: 1rem;
+    text-align: justify;
+    position: relative;
+    min-width: 100%;
+    overflow-y: hidden;
+}
+
+@media only screen and (min-width: 700px) {
+    .page-select-active {
+        padding: 5rem 3rem 0 2rem;
+    }
+}

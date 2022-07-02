@@ -1,0 +1,7 @@
+.author {
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}

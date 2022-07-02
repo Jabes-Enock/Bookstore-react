@@ -1,0 +1,39 @@
+.navigation {
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.link-active {
+   color: var(--black);
+   border-bottom: 2px solid var(--white) !important;
+}
+
+.navigation-item {
+    font-family: sans-serif;
+    padding: 0.5rem;
+    color: var(--white);
+    border-bottom: 2px solid var(--black);
+}
+
+@media only screen and (max-width: 750px) {
+    .navigation {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 30;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    
+    
+}

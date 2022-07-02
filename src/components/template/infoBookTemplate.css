@@ -1,0 +1,167 @@
+.bookInfo {
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.bookInfo-title {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: serif;
+    color: var(--black);
+}
+
+.bookInfo-description {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: serif;
+    line-height: 120%;
+}
+
+.bookInfo-categories > .category {
+    padding: 4px 1rem;
+    border-radius: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: small;
+    font-family: sans-serif;
+}
+
+a.bookInfo-3.bookInfo-read-book  {
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.bookInfo-movie-release,
+.bookInfo-author {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+
+
+@media only screen and (max-width: 749px) {
+    .bookInfo-cover {
+        margin: 80px auto 0;
+        max-width: 200px;
+    }
+
+    .bookInfo-title {
+        margin: 2rem 0;
+    }
+
+    .bookInfo-categories {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .bookInfo-categories > .category {
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    a.bookInfo-3.bookInfo-read-book  {
+        padding: 1rem;
+        border-radius: 50px;
+        background-color: var(--white);
+        color: var(--black);
+        border: 3px solid var(--black);
+        margin: 3rem auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .bookInfo-movie-release {
+        margin: 1rem 0;
+    }
+
+    .bookInfo-author {
+        align-self: center;
+    } 
+}
+
+
+
+
+@media only screen and (min-width: 750px) {
+    .bookInfo {
+        margin: 5rem auto;
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr repeat(2, 45px)  ;
+        gap: 0 2rem ;
+    }
+
+    .bookInfo-1 {
+        grid-column: 1 / 2;
+    }
+    .bookInfo-cover {
+        display: block;
+    }
+
+    .bookInfo-2 {
+        grid-column: 2 / 4;
+        display: grid;
+        grid-template-rows: 60px auto ;
+        grid-template-areas: 
+        'tit tit'
+        'des des'
+        'cat cat'
+        ;
+    }
+    
+    .bookInfo-title {
+        grid-area: tit;
+    }
+
+    .bookInfo-description {
+        grid-area: des;
+    }
+
+    .bookInfo-categories {
+        grid-area: cat;
+        align-self: end;
+        display: flex;
+    }
+
+    .bookInfo-categories > .category {
+        margin-right: 1rem;
+    }
+
+    a.bookInfo-3.bookInfo-read-book  {
+        grid-column: 1 / 2;
+    }
+
+    a.bookInfo-read-book:hover {
+        opacity: 0.95;
+    }
+
+
+    .bookInfo-4 {
+        grid-column: 2 / 3 ;
+        display: grid;
+    }
+
+
+    .bookInfo-movie-release {
+        align-self: end;
+    }
+
+    .bookInfo-author {
+        align-self: center;
+    }
+
+
+
+}

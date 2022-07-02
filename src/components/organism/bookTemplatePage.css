@@ -1,0 +1,36 @@
+
+
+@media only screen and (max-width: 700px) {
+    .BookTemplate-page {
+        display: flex;
+        max-width: 100vw;
+        overflow: auto;
+        background-color: var(--white);
+        position: relative;
+    }
+    
+    .BookTemplate-page-content {
+        min-width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 0.1fr;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+   
+    .BookTemplate-page {
+        grid-area: pag;
+        display: flex;
+        max-width: 100%;
+        overflow: auto;
+        background-color: var(--white);
+        position: relative;
+    }
+
+    .BookTemplate-page-content {
+        min-width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 0.1fr;
+    }
+
+}

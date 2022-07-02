@@ -1,0 +1,18 @@
+.select-page-book {
+    width: 100%;
+}
+
+
+
+.select-page-book-page {
+    max-width: 100%;
+    background-color: var(--white);
+    display: grid;
+    place-items: center;
+    padding-bottom: 1rem;
+}
+
+img.select-page-book-page-img {
+    width: 60%;
+    margin: 1rem;
+}
