@@ -1,0 +1,48 @@
+@media only screen and (max-width: 700px) {
+    .book-arrows {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        padding: 1rem;
+    }
+
+    .book-arrows button {
+        width: 100%;
+        padding: 0 1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: var(--white);
+        background-color: var(--black);
+        border: none;
+        border-radius: 8px;
+        box-shadow: 
+        0 0 20px 10px var(--white);
+    }
+
+
+}
+
+@media only screen and (min-width: 700px) {
+    .book-arrows {
+        grid-area: arr;
+    }
+
+    .book-arrows button {
+        margin-left: 1rem;
+        padding: 0 1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: var(--white);
+        background-color: var(--black);
+        border: none;
+        border-radius: 8px;
+    }
+   
+    .book-arrows button:hover {
+        opacity: 0.9;
+    }
+}

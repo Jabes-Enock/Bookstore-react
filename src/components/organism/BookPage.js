@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 /* Style */
-import './bookTemplatePage.css'
+import './bookPage.css'
 
 /* Component */
 import PageSelelectActive from "../atoms/PageSelelectActive";
 
-const BookTemplatePage = () => {
+const BookPage = () => {
 
     const [pages, setPages] = useState([]) 
     const { books } = useLivroContext();
@@ -22,15 +22,15 @@ const BookTemplatePage = () => {
     } , [pages])
 
     return (
-        <div className='BookTemplate-page'>
+        <div className='book-page'>
             <div className="prevent-scroll"></div> 
             {   
                 pages.map( (eachpage, index) => (
                     <div key = { eachpage.id } 
-                    className="BookTemplate-page-content" 
+                    className="book-page-content" 
                     id ={ eachpage.pageNumber }>
                         <PageSelelectActive text={eachpage.text}   />
-                        <div className="BookTemplate-page-number"> { eachpage.pageNumber }  </div>  
+                        <div className="book-page-number"> { eachpage.pageNumber }  </div>  
                     </div> 
                 ))
             }
@@ -38,4 +38,4 @@ const BookTemplatePage = () => {
     )
 }
 
-export default BookTemplatePage
+export default BookPage
