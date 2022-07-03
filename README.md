@@ -75,21 +75,21 @@ padding: 1rem;
 
 <h2>Run Locally</h2>
 <h3>1. Install Dependencies</h3>
-```
-$ npm install
-```
+
+    $ npm install
+
 
 <br/>
 <h3>2. Run development server</h3>
-````
-$ npm run start
-```
+
+    $ npm run start
+
 
 <br/>
 <h3>3. Build the project</h3>
-```
-$ npm run build
-```
+
+    $ npm run build
+
 
 <br/><br/><br/>
 <p>Made by Jabes Enock</p>
