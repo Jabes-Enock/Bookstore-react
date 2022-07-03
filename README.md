@@ -81,7 +81,7 @@ $ npm install
 
 <br/>
 <h3>2. Run development server</h3>
-```
+````
 $ npm run start
 ```
 
